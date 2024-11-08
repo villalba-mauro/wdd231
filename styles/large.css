@@ -1,0 +1,60 @@
+
+@media (min-width: 600px) {
+
+
+
+#menu {
+	display: none; 
+}
+
+
+.navigation {
+	
+	flex-direction: row;
+	/* flex: 1 1 100%; */
+	justify-content: space-around;
+	
+}
+
+.navigation a {
+	width: 100%;
+	display: block;
+	
+	
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    column-gap: .5rem;
+    
+}
+/* .courses{
+    background-color: rgb(136, 136, 236);
+} */
+.city{
+    background-color: rgb(251, 249, 252);
+}
+
+.certificate h2{
+	margin-top: 3em;
+}
+#coursesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 2px solid black; */
+    /* width: 100%; */
+   margin-bottom: 1.3rem;
+}
+.course {
+ background-color: rgb(82, 23, 138);
+ 
+ 
+
+ 
+}
+
+
+}
