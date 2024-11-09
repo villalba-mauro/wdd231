@@ -38,6 +38,7 @@
 
 .certificate h2{
 	margin-top: 3em;
+    font-size: 2rem;
 }
 #coursesContainer{
     display: flex;
@@ -47,13 +48,6 @@
     /* border: 2px solid black; */
     /* width: 100%; */
    margin-bottom: 1.3rem;
-}
-.course {
- background-color: rgb(82, 23, 138);
- 
- 
-
- 
 }
 
 

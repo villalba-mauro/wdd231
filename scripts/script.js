@@ -5,7 +5,7 @@ function getCurrentYear() {
     currentYearElement.textContent = currentYear;
 }
 
-// Function to get the date of last modification and populate it in the footer
+
 // Function to get the date of last modification and populate it in the footer
 function getLastModifiedDate() {
     const lastModifiedElement = document.getElementById('lastModified');
@@ -120,29 +120,48 @@ const courses = [
     }
 ]
 
-function displayCourses(coursesToDisplay){
-    const container = document.getElementById('coursesContainer');
-    container.innerHTML = ''; 
+// function displayCourses(coursesToDisplay){
+//     const container = document.getElementById('coursesContainer');
+//     container.innerHTML = ''; 
 
-    coursesToDisplay.forEach(course => {
-        const courseElement = document.createElement('div');
-        courseElement.classList.add('course');
-        courseElement.innerHTML = `
-      <h3>${course.title} (${course.subject} ${course.number})</h3>`;
-      container.appendChild(courseElement);
-    });
-}
+//     coursesToDisplay.forEach(course => {
+//         const courseElement = document.createElement('div');
+//         courseElement.classList.add('course');
+//         courseElement.innerHTML = `
+//       <h3>${course.title} (${course.subject} ${course.number})</h3>`;
+//       container.appendChild(courseElement);
+//     });
+// }
 
     //   <p>${course.description}</p>
     //   <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
     
-
+    function displayCourses(coursesToDisplay) {
+        const container = document.getElementById('coursesContainer');
+        container.innerHTML = ''; 
+    
+        coursesToDisplay.forEach(course => {
+            const courseElement = document.createElement('div');
+            courseElement.classList.add('course');
+            
+            // Crear una clase única para cada curso basada en el `subject` y `number`
+            const uniqueClass = `${course.subject}-${course.number}`;
+            courseElement.classList.add(uniqueClass); 
+            
+            courseElement.innerHTML = `
+                <h3>${course.title} (${course.subject} ${course.number})</h3>`;
+            
+            container.appendChild(courseElement);
+        });
+    }
+    
+    
 
 // Función para filtrar los cursos
 function filterCourses(category) {
     let filteredCourses;
     
-    if (category === 'all') {
+    if (category === 'ALL') {
       filteredCourses = courses; // Muestra todos los cursos
     } else {
       filteredCourses = courses.filter(course => course.subject === category);
@@ -153,3 +172,18 @@ function filterCourses(category) {
   
   // Muestra todos los cursos por defecto al cargar la página
   filterCourses('all');
+
+
+
+
+
+//-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+  

@@ -195,6 +195,14 @@ nav {
 	color:white;
 	text-align: center;
 }
+
+.WDD-231 {
+    background-color: rgb(255, 242, 67); /* Cambia este color para destacar */
+}
+.WDD-231 h3{
+	color: black;
+}
+
 .certificate h2{
 	margin-top: 1rem;
 	text-align: center;
@@ -203,11 +211,20 @@ nav {
 	/* display: flex;
 	justify-content: center; */
 	text-align: center;
+	background-color: #609ceb;
+	margin: .5rem;
 }
 .botones button{
+	font-family: var(--heading-font);
+	
+	color: black;
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 10em ;
 	margin: 1rem;
 	font-size: 1.5rem;
-	padding: 5px;
+	padding: 15px;
+	cursor: pointer;
 }
 .foo{
 	background-color: black;
