@@ -70,7 +70,7 @@
 }
 
 .botones button{
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .botones button:hover{
