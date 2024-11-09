@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap'); */
 
 :root{
 	--heading-font:'Roboto Slab';
@@ -132,6 +132,7 @@ nav {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
+	transition: .3s;
 }
 .navigation a:hover {
 	background-color: #ffa845;
@@ -142,6 +143,7 @@ nav {
 /* when the button is clicked - the open class is toggled (added/removed) */
  .open a {
 	display: block;
+	/* transition: .5s; */
 	
 } 
 
