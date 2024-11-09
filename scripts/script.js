@@ -171,7 +171,7 @@ function filterCourses(category) {
   }
   
   // Muestra todos los cursos por defecto al cargar la página
-  filterCourses('all');
+  filterCourses('ALL');
 
 
 
@@ -181,6 +181,24 @@ function filterCourses(category) {
 
 
 
+// Función que calcula la suma de los créditos de los cursos
+function calculateTotalCredits(courses) {
+    return courses.reduce((total, course) => total + course.credits, 0);
+}
+
+// Función para actualizar el total de créditos en el HTML
+function displayTotalCredits(courses) {
+    const totalCredits = calculateTotalCredits(courses);
+    
+    // Seleccionamos el div donde queremos mostrar el total de créditos
+    const creditsDiv = document.getElementById('creditsTotal');
+    
+    // Actualizamos el contenido de ese div con el total de créditos
+    creditsDiv.innerHTML = `Total Credits: ${totalCredits}`;
+}
+
+// Llamamos a la función para mostrar el total de créditos al cargar la página
+displayTotalCredits(courses);
 
 
 

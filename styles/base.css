@@ -19,7 +19,7 @@ body {
 
 /* mobile **************************/
 header {
-	background-color: #609ceb;
+	background-color: #a5ccff;
 	text-align: center;
 	padding: 20px 0;
 	padding-bottom: 0;
@@ -32,7 +32,7 @@ header img{
 h1{
 	font-family: var(--heading-font);
 	font-size: 2rem;
-    margin-left: 1rem;
+    
 	text-align: center;
 }
 
@@ -99,7 +99,7 @@ nav {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #050;
+	color: rgb(0, 11, 102);
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -207,6 +207,15 @@ nav {
 	margin-top: 1rem;
 	text-align: center;
 }
+.credits-total {
+	text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #002e6b;
+    margin-top: 20px;
+}
+
+
 .botones{
 	/* display: flex;
 	justify-content: center; */
@@ -220,11 +229,16 @@ nav {
 	color: black;
 	background-color: rgb(255, 255, 255);
 	border: 2px solid rgb(0, 0, 0);
+	
 	border-radius: 10em ;
 	margin: 1rem;
 	font-size: 1.5rem;
 	padding: 15px;
 	cursor: pointer;
+}
+.botones button:hover{
+	background-color: #ffa845;
+	transform: .5s;
 }
 .foo{
 	background-color: black;
