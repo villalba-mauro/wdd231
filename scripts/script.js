@@ -136,72 +136,45 @@ const courses = [
     //   <p>${course.description}</p>
     //   <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
     
-    function displayCourses(coursesToDisplay) {
-        const container = document.getElementById('coursesContainer');
-        container.innerHTML = ''; 
-    
-        coursesToDisplay.forEach(course => {
-            const courseElement = document.createElement('div');
-            courseElement.classList.add('course');
-            
-            // Crear una clase única para cada curso basada en el `subject` y `number`
-            const uniqueClass = `${course.subject}-${course.number}`;
-            courseElement.classList.add(uniqueClass); 
-            
-            courseElement.innerHTML = `
-                <h3>${course.title} (${course.subject} ${course.number})</h3>`;
-            
-            container.appendChild(courseElement);
-        });
-    }
-    
-    
 
-// Función para filtrar los cursos
-function filterCourses(category) {
+    
+ 
+ function filterCourses(category) {
     let filteredCourses;
-    
+
     if (category === 'ALL') {
-      filteredCourses = courses; // Muestra todos los cursos
+        filteredCourses = courses; // Muestra todos los cursos
     } else {
-      filteredCourses = courses.filter(course => course.subject === category);
+        filteredCourses = courses.filter(course => course.subject === category); // Filtra por la categoría
     }
-    
-    displayCourses(filteredCourses); // Muestra los cursos filtrados
-  }
-  
-  // Muestra todos los cursos por defecto al cargar la página
-  filterCourses('ALL');
 
+    // Muestra los cursos filtrados
+    displayCourses(filteredCourses);
 
+    // Sumar los créditos de los cursos filtrados
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
 
-
-
-//-----------------------------------------------------------------
-
-
-
-// Función que calcula la suma de los créditos de los cursos
-function calculateTotalCredits(courses) {
-    return courses.reduce((total, course) => total + course.credits, 0);
+    // Mostrar el total de créditos
+    document.getElementById('totalCredits').innerText = `Total Credits: ${totalCredits}`;
 }
 
-// Función para actualizar el total de créditos en el HTML
-function displayTotalCredits(courses) {
-    const totalCredits = calculateTotalCredits(courses);
-    
-    // Seleccionamos el div donde queremos mostrar el total de créditos
-    const creditsDiv = document.getElementById('creditsTotal');
-    
-    // Actualizamos el contenido de ese div con el total de créditos
-    creditsDiv.innerHTML = `Total Credits: ${totalCredits}`;
+function displayCourses(coursesToDisplay) {
+    const container = document.getElementById('coursesContainer');
+    container.innerHTML = '';  // Limpiar el contenedor
+
+    coursesToDisplay.forEach(course => {
+        const courseElement = document.createElement('div');
+        courseElement.classList.add('course');
+
+        // Crear una clase única para cada curso basada en el `subject` y `number`
+        const uniqueClass = `${course.subject}-${course.number}`;
+        courseElement.classList.add(uniqueClass);
+
+        courseElement.innerHTML = `
+            <h3>${course.title} (${course.subject} ${course.number})</h3>
+            <p>Credits: ${course.credits}</p>
+        `;
+
+        container.appendChild(courseElement);
+    });
 }
-
-// Llamamos a la función para mostrar el total de créditos al cargar la página
-displayTotalCredits(courses);
-
-
-
-
-
-  
