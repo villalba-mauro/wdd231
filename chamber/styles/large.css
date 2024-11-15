@@ -1,0 +1,51 @@
+@media (min-width: 600px){
+
+    h1{
+        font-size: 2rem;    
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        height: 10vw;
+        margin-right: 1rem;
+    }
+    #menu {
+        display: none; 
+    }
+    
+    
+    .navigation {
+        
+        flex-direction: row;
+        /* flex: 1 1 100%; */
+        justify-content: space-around;
+        
+    }
+    
+    .navigation a {
+        width: 100%;
+        display: block;
+        
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

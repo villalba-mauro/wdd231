@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Micro Pack",
+        "address": "Calle Falsa 123, Rosario, Santa Fe",
+        "phone number": "+54 341 123-4567",
+        "descripcion": "Conocida por su innovadora producción en tecnología agrícola."
+    },
+    {
+        "name": "Novogar",
+        "address": "Av. Libertad 456, Rosario, Santa Fe",
+        "phone number": "+54 341 234-5678",
+        "descripcion": "Líder en exportación de productos de la región."
+    },
+    {
+        "name": "Direct Tv",
+        "address": "Calle San Martín 789, Rosario, Santa Fe",
+        "phone number": "+54 341 345-6789",
+        "descripcion": "Destacada por su aporte en la industria farmacéutica."
+    },
+    {
+        "name": "San Cristobal",
+        "address": "Boulevard Oroño 321, Rosario, Santa Fe",
+        "phone number": "+54 341 456-7890",
+        "descripcion": "Empresa de renombre en servicios financieros y bancarios."
+    },
+    {
+        "name": "Sport 78",
+        "address": "Calle Mitre 654, Rosario, Santa Fe",
+        "phone number": "+54 341 567-8901",
+        "descripcion": "Reconocida por su calidad en educación y formación profesional."
+    },
+    {
+        "name": "Ternium",
+        "address": "Av. Pellegrini 111, Rosario, Santa Fe",
+        "phone number": "+54 341 678-9012",
+        "descripcion": "Famosa por sus desarrollos en construcción y arquitectura sostenible."
+    },
+    {
+        "name": "La Virginia",
+        "address": "Calle Córdoba 222, Rosario, Santa Fe",
+        "phone number": "+54 341 789-0123",
+        "descripcion": "Conocida por su gran trayectoria en comercio internacional."
+    },
+    {
+        "name": "Telecom",
+        "address": "Av. Francia 333, Rosario, Santa Fe",
+        "phone number": "+54 341 890-1234",
+        "descripcion": "Empresa líder en telecomunicaciones y tecnología."
+    },
+    {
+        "name": "YPF",
+        "address": "Calle España 444, Rosario, Santa Fe",
+        "phone number": "+54 341 901-2345",
+        "descripcion": "Famosa por sus productos de consumo masivo de alta calidad."
+    }
+]
