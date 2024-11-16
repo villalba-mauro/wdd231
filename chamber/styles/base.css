@@ -107,6 +107,33 @@ h2{
 	font-family: var(--heading-font);
 	text-align: center;
 }
+#grid{
+	font-family: var(--heading-font);
+	
+	color: black;
+	background-color: rgb(179, 227, 255);
+	border: 1px solid rgb(0, 0, 0);
+	
+	border-radius: 10em ;
+	margin: 1rem;
+	font-size: .8rem;
+	/* padding: 15px; */
+	cursor: pointer;
+}
+#list{
+	font-family: var(--heading-font);
+	
+	color: black;
+	background-color: rgb(179, 227, 255);
+	border: 1px solid rgb(0, 0, 0);
+	
+	border-radius: 10em ;
+	margin: 1rem;
+	font-size: .8rem;
+	/* padding: 15px; */
+	cursor: pointer;
+
+}
 .display {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);

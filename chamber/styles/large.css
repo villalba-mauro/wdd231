@@ -32,8 +32,47 @@
         
     }
 
+    /*BUTTONS GRID AND LIST*/
 
+    #grid{
+        font-family: var(--heading-font);
+        
+        color: black;
+        background-color: rgb(179, 227, 255);
+        border: 1px solid rgb(0, 0, 0);
+        
+        border-radius: 10em ;
+        margin: 1rem;
+        font-size: 1.1rem;
+        /* padding: 15px; */
+        cursor: pointer;
+    }
+    #list{
+        font-family: var(--heading-font);
+        
+        color: black;
+        background-color: rgb(179, 227, 255);
+        border: 1px solid rgb(0, 0, 0);
+        
+        border-radius: 10em ;
+        margin: 1rem;
+        font-size: 1.1rem;
+        /* padding: 15px; */
+        cursor: pointer;
+    
+    }
 
+    #grid:hover{
+        background-color:white;
+        transition: .3s;
+        transform: scale(1.2); 
+    }
+    #list:hover{
+        background-color: white;
+        transition: .3s;
+        transform: scale(1.2); 
+
+    }
 
 
 
