@@ -2,55 +2,82 @@
     {
         "name": "Micro Pack",
         "address": "Calle Falsa 123, Rosario, Santa Fe",
-        "phone number": "+54 341 123-4567",
-        "descripcion": "Conocida por su innovadora producción en tecnología agrícola."
+        "phone": "+54 341 123-4567",
+        "image":"images/micro_pack.jpg",
+        "membership_level": "Bronze",
+        "website":"https://www.micropack.com.ar/",
+        "sector": "Sector: Distribution of food, drinks, household items and cleaning products"
     },
     {
         "name": "Novogar",
         "address": "Av. Libertad 456, Rosario, Santa Fe",
-        "phone number": "+54 341 234-5678",
-        "descripcion": "Líder en exportación de productos de la región."
+        "phone": "+54 341 234-5678",
+        "image":"images/novogar.jpg",
+        "membership_level": "Silver",
+        "website":"https://www.novogar.com.ar/",
+        "sector": "Sector: Household appliances"
     },
     {
         "name": "Direct Tv",
         "address": "Calle San Martín 789, Rosario, Santa Fe",
-        "phone number": "+54 341 345-6789",
-        "descripcion": "Destacada por su aporte en la industria farmacéutica."
+        "phone": "+54 341 345-6789",
+        "membership_level": "Silver",
+        "image":"images/directv.jpg",
+        "website": "https://www.directv.com.ar/",
+        "sector": "Sector: Satellite Television"
     },
     {
         "name": "San Cristobal",
         "address": "Boulevard Oroño 321, Rosario, Santa Fe",
-        "phone number": "+54 341 456-7890",
-        "descripcion": "Empresa de renombre en servicios financieros y bancarios."
+        "phone": "+54 341 456-7890",
+        "image":"images/sancristobal.jpg",
+        "membership_level": "Gold",
+        "website":"https://www.sancristobal.com.ar/institucional/",
+        "sector": "Sector: Insurance and financial services group"
     },
     {
         "name": "Sport 78",
         "address": "Calle Mitre 654, Rosario, Santa Fe",
-        "phone number": "+54 341 567-8901",
-        "descripcion": "Reconocida por su calidad en educación y formación profesional."
+        "phone": "+54 341 567-8901",
+        "image":"images/sport78.jpg",
+        "membership_level": "Bronze",
+        "website":"https://www.sport78.com/",
+        "sector": "Sector: Clothing and sports shoes"
     },
     {
         "name": "Ternium",
         "address": "Av. Pellegrini 111, Rosario, Santa Fe",
-        "phone number": "+54 341 678-9012",
-        "descripcion": "Famosa por sus desarrollos en construcción y arquitectura sostenible."
+        "phone": "+54 341 678-9012",
+        "image":"images/ternium.jpg",
+        "membership_level": "Silver",
+        "website":"https://ar.ternium.com/es",
+        "sector": "Sector: Metallurgical"
     },
     {
         "name": "La Virginia",
         "address": "Calle Córdoba 222, Rosario, Santa Fe",
-        "phone number": "+54 341 789-0123",
-        "descripcion": "Conocida por su gran trayectoria en comercio internacional."
+        "phone": "+54 341 789-0123",
+        "image":"images/lavirginia.jpg",
+        "membership_level": "Bronze",
+        "website":"https://www.lavirginia.com.ar/",
+        "sector": "Sector: Food and agricultural products"
     },
     {
         "name": "Telecom",
         "address": "Av. Francia 333, Rosario, Santa Fe",
-        "phone number": "+54 341 890-1234",
-        "descripcion": "Empresa líder en telecomunicaciones y tecnología."
+        "phone": "+54 341 890-1234",
+        "image":"images/telecom.jpg",
+        "membership_level": "Silver",
+        "website":"https://www.telecom.com.ar/web/",
+        "sector": "Secor: Telecommunications"
     },
     {
         "name": "YPF",
         "address": "Calle España 444, Rosario, Santa Fe",
-        "phone number": "+54 341 901-2345",
-        "descripcion": "Famosa por sus productos de consumo masivo de alta calidad."
+        "phone": "+54 341 901-2345",
+        "image":"images/ypf.jpg",
+        "membership_level": "Gold",
+        "website":"https://ypf.com/",
+        "sector": "Sector: Energy, production, refining and sale of oil and gas"
     }
 ]
