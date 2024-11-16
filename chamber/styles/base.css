@@ -223,7 +223,7 @@ hr{
 }
 
 .list section > * {
-	margin: 0 1rem;
+	margin: 0 .3rem;
 }
 
 .list section img {
@@ -259,8 +259,8 @@ img {
 } 
 
 .foo{
-	background-color: black;
-	color:white;
+	background-color: rgb(179, 227, 255);
+	color:black;
 	font-size: .9rem;
 }
 .foo p{
@@ -268,4 +268,5 @@ img {
 	padding:.3rem;
 	text-align: center;
 	font-family: var(--paragraph-font);
+	font-weight: 500;
 }

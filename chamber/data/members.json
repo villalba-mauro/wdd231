@@ -6,7 +6,7 @@
         "image":"images/micro_pack.jpg",
         "membership_level": "Bronze",
         "website":"https://www.micropack.com.ar/",
-        "sector": "Sector: Distribution of food, drinks, household items and cleaning products"
+        "sector": "Distribution of food, drinks, household items and cleaning products"
     },
     {
         "name": "Novogar",
@@ -15,7 +15,7 @@
         "image":"images/novogar.jpg",
         "membership_level": "Silver",
         "website":"https://www.novogar.com.ar/",
-        "sector": "Sector: Household appliances"
+        "sector": "Household appliances"
     },
     {
         "name": "Direct Tv",
@@ -24,7 +24,7 @@
         "membership_level": "Silver",
         "image":"images/directv.jpg",
         "website": "https://www.directv.com.ar/",
-        "sector": "Sector: Satellite Television"
+        "sector": "Satellite Television"
     },
     {
         "name": "San Cristobal",
@@ -33,7 +33,7 @@
         "image":"images/sancristobal.jpg",
         "membership_level": "Gold",
         "website":"https://www.sancristobal.com.ar/institucional/",
-        "sector": "Sector: Insurance and financial services group"
+        "sector": "Insurance and financial services group"
     },
     {
         "name": "Sport 78",
@@ -42,7 +42,7 @@
         "image":"images/sport78.jpg",
         "membership_level": "Bronze",
         "website":"https://www.sport78.com/",
-        "sector": "Sector: Clothing and sports shoes"
+        "sector": "Clothing and sports shoes"
     },
     {
         "name": "Ternium",
@@ -51,7 +51,7 @@
         "image":"images/ternium.jpg",
         "membership_level": "Silver",
         "website":"https://ar.ternium.com/es",
-        "sector": "Sector: Metallurgical"
+        "sector": "Metallurgical"
     },
     {
         "name": "La Virginia",
@@ -60,7 +60,7 @@
         "image":"images/lavirginia.jpg",
         "membership_level": "Bronze",
         "website":"https://www.lavirginia.com.ar/",
-        "sector": "Sector: Food and agricultural products"
+        "sector": "Food and agricultural products"
     },
     {
         "name": "Telecom",
@@ -69,7 +69,7 @@
         "image":"images/telecom.jpg",
         "membership_level": "Silver",
         "website":"https://www.telecom.com.ar/web/",
-        "sector": "Secor: Telecommunications"
+        "sector": "Telecommunications"
     },
     {
         "name": "YPF",
@@ -78,6 +78,6 @@
         "image":"images/ypf.jpg",
         "membership_level": "Gold",
         "website":"https://ypf.com/",
-        "sector": "Sector: Energy, production, refining and sale of oil and gas"
+        "sector": "Energy, production, refining and sale of oil and gas"
     }
 ]

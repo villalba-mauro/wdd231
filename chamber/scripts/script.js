@@ -62,8 +62,8 @@ fetch("data/members.json")
         <h3>${company.name}</h3>
         <p>${company.address}</p>
         <p>Phone: ${company.phone}</p>
-        <p>Membership Level: ${company.membership_level}</p>
-        <p style="font-style: italic; font-weight: bold;">${company.sector}</p>
+        <p>Membership Level: <strong>${company.membership_level}</p></strong>
+       	<p>Sector: <strong>${company.sector}</strong></p>
         <strong><a href="${company.website}" target="_blank">Website</a></strong>
       `;
 
