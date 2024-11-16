@@ -26,8 +26,6 @@ header {
 h1{
     font-family: var(--heading-font);
     font-size: 1.2rem;
- 
-    
 }
 .logo{
   display: block;
@@ -105,7 +103,20 @@ h1{
 /*----------------------------------CHAMBER MEMBER-----------------------*/
 h2{
 	font-family: var(--heading-font);
+	font-size: 1.1rem;
 	text-align: center;
+	
+}
+hr{
+	margin: 20px auto auto;
+	
+	width: 30%;
+
+}
+.view{
+	text-align: center;
+	font-family: var(--heading-font);
+	font-size: 1rem;
 }
 #grid{
 	font-family: var(--heading-font);
@@ -135,10 +146,8 @@ h2{
 
 }
 .display {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: rgb(159, 200, 247);
+	/* margin: 1rem auto; */
+	font-family: var(--heading-font);
 	text-align: center;
 }
 
@@ -146,6 +155,19 @@ h2{
 	padding: 1rem;
 	font-weight: 700;
 }
+#grid:hover{
+	background-color:rgb(17, 97, 218);
+	color: white;
+	transition: .3s;
+	transform: scale(1.2); 
+}
+#list:hover{
+	background-color:rgb(17, 97, 218);
+	color: white;
+	transition: .3s;
+	transform: scale(1.2); 
+}
+
 
 section {
 	border: 1px solid rgba(0, 0, 0, 0.1);

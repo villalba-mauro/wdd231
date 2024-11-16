@@ -29,8 +29,22 @@
         width: 100%;
         display: block;
         
-        
     }
+
+    h2{
+        font-size: 1.8rem;
+    }
+    .display{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .view{
+        text-align: center;
+        font-family: var(--heading-font);
+        font-size: 1.2rem;
+    }
+
 
     /*BUTTONS GRID AND LIST*/
 
@@ -64,14 +78,15 @@
 
     #grid:hover{
         background-color:white;
+        color:black;
         transition: .3s;
         transform: scale(1.2); 
     }
     #list:hover{
         background-color: white;
+        color:black;
         transition: .3s;
         transform: scale(1.2); 
-
     }
 
 
