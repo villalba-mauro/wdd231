@@ -1,7 +1,6 @@
 :root{
 	--heading-font:'Roboto Slab';
 	--paragraph-font:'Glory';
-
 }
 
 
@@ -13,7 +12,7 @@
 
 header {
     
-	background-color: #a5ccff;
+	background-color: #a5ccff73;
 	text-align: center;
 	padding: 20px 0;
 	padding-bottom: 0;
@@ -78,13 +77,14 @@ h1{
 	padding: 1rem;
 	font-size:1.2rem;
 	text-align: center;
-   font-family: var(--heading-font);
+    font-family: var(--paragraph-font);
+	font-weight: 500;
 	text-decoration: none;
 	color: #fff;
 	transition: .3s;
 }
 .navigation a:hover {
-	background-color: #ffa845;
+	background-color: rgb(179, 227, 255);;
 	color: #000000;
 	font-weight: 700;
 } 
@@ -190,9 +190,6 @@ hr{
 }
 .grid section {
 	text-align: center;
-	
-	
-
 }
 
 .grid img {
@@ -234,7 +231,7 @@ hr{
 }
 
 .list section h3 {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	
 }
 

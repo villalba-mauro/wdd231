@@ -89,7 +89,17 @@
         transform: scale(1.2); 
     }
 
+    .list section h3 {
+        font-size: 1.3rem;
+        
+    }
 
+    .grid img:hover{
+       
+        box-shadow: 0 0 13px #165ffa;
+        transition: .3s;
+        transform: scale(1.2); 
+    }
 
 
 
