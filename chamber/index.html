@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Home Page</title>
+	<meta name="description" content="Chamber of Commerce Home Page - Welcome to the official website of the Rosario Chamber of Commerce. Discover the top local businesses, upcoming events, and resources to support regional growth and entrepreneurship." >  
+    <meta name="author" content="Mauro Villalba | WDD 231">
+	<link rel="icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/indexLarge.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Home Page - Chambers of Commerce">
+    <meta property="og:type" content="website">
+	<meta property="og:description" content="Explore the Chamber of Commerce of Rosario, where the most prestigious companies come together to promote growth, innovation, and excellence in the local business community." >
+    <meta property="og:image" content="https://villalba-mauro.github.io/wdd231/images/chamber_logo.png">
+    <meta property="og:url" content="https://villalba-mauro.github.io/wdd231/chamber/directory.html">
+   
+</head>
+<body>
+    <header>
+        <button type="button" id="menu"></button>
+
+        <div class="logo">
+            <a href=""><img src="images/logo_sin_fondo.png" alt=""></a>
+            <h1>Chamber of Commerce Rosario</h1>
+        </div>
+      
+        <nav class="navigation">
+            <a href="/index.html" title="Home" class="active">Home</a>
+            <a href="#" title="About Us">Discover</a>
+            <a href="directory.html" >Directory</a>
+            <a href="#">Join</a>
+        </nav>
+    </header>
+    <main>
+
+       
+        <section class="container">
+            
+
+            <div class="welcome">
+                <h2>Invest in the Future of Rosario</h2>
+                <p>"Meet the best local companies driving economic growth in our city. Join the movement, connect with visionary leaders, and explore unique opportunities to invest and collaborate. Grow your future with us!"</p>
+                
+                <a class="toaction" href="join.html">Join Us!</a>
+                
+                <img id="img" src="images/rosario_city.webp" alt="">
+            </div>
+
+            <article class="chamber">
+                <div id="empresa">
+                    <h2>Become Part of a Network of Success</h2>
+                    <p>The Rosario Chamber of Commerce is more than a membership—it’s a movement. By joining, you become part of a collective effort to elevate our city's business landscape while contributing to a prosperous future for all.
+                        
+                    Take the next step in your business journey. Join the Rosario Chamber of Commerce today and discover the difference of working together for success.</p>
+                </div>
+                
+                <img src="images/empresa.webp" alt="">
+            </article>
+            <!-- <img src="images/empresa2..jpg" alt=""> -->
+        </section>
+
+        <h3>Forecast</h3>
+        <section id="wheater">
+         
+            <div class="card">
+                <h2 id="town">.</h2>
+                <img id="graphic" src="none" alt="">
+                <p id="description"></p>
+                <p id="temperature"></p>
+            </div>
+            
+            <div id="weatherForecastContainer"></div>
+        </section>
+
+        <section class="event">
+            <img src="images/evento.jpg" alt="">
+            <div class="event-t">
+                <h2>Business Leaders Summit 2024: Driving Regional Success</h2>
+                 <p>The Rosario Chamber of Commerce invites entrepreneurs, business leaders, and local innovators to the Grand Business Summit 2024. This event will bring together the top companies in our region to foster strategic partnerships, exchange innovative ideas, and highlight the importance of strengthening local commerce. Join us to explore unique opportunities and be part of our community's economic growth. Don’t miss it!</p>
+
+            </div>
+            
+           
+
+        </section>
+
+        <section class="companies">
+            <h2>Get to know our best companies</h2>
+            <div id="members-container" class="grid"></div>
+        </section>
+        
+        <footer class="foo">
+            <p class="final">
+                <span id="currentyear"></span>
+                ©️ Mauro Villalba - Rosario Argentina<br>
+            </p>
+            <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
+        </footer>
+
+    </main>
+<script src="scripts/wheater.js"></script>
+<script src="scripts/callcompanies.js"></script>
+</body>
+</html>

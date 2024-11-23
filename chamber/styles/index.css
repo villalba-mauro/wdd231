@@ -107,66 +107,9 @@ h2{
 	text-align: center;
 	
 }
-hr{
-	margin: 20px auto auto;
-	
-	width: 30%;
 
-}
-.view{
-	text-align: center;
-	font-family: var(--heading-font);
-	font-size: 1rem;
-}
-#grid{
-	font-family: var(--heading-font);
-	
-	color: black;
-	background-color: rgb(179, 227, 255);
-	border: 1px solid rgb(0, 0, 0);
-	
-	border-radius: 10em ;
-	margin: 1rem;
-	font-size: .8rem;
-	/* padding: 15px; */
-	cursor: pointer;
-}
-#list{
-	font-family: var(--heading-font);
-	
-	color: black;
-	background-color: rgb(179, 227, 255);
-	border: 1px solid rgb(0, 0, 0);
-	
-	border-radius: 10em ;
-	margin: 1rem;
-	font-size: .8rem;
-	/* padding: 15px; */
-	cursor: pointer;
 
-}
-.display {
-	/* margin: 1rem auto; */
-	font-family: var(--heading-font);
-	text-align: center;
-}
 
-.display button {
-	padding: 1rem;
-	font-weight: 700;
-}
-#grid:hover{
-	background-color:rgb(17, 97, 218);
-	color: white;
-	transition: .3s;
-	transform: scale(1.2); 
-}
-#list:hover{
-	background-color:rgb(17, 97, 218);
-	color: white;
-	transition: .3s;
-	transform: scale(1.2); 
-}
 
 
 section {
@@ -178,16 +121,14 @@ section {
 }
 
 .grid {
+    
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 10px;
 	margin: 0 10px 20px 10px;
 	
 }
-hr{
-    border: 1px solid rgb(100, 97, 97);
-    margin-bottom: 10px;
-}
+
 .grid section {
 	text-align: center;
 }
@@ -205,39 +146,8 @@ hr{
 	font-family:var(--heading-font);
 }
 
-.list {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 20px;
-}
 
-.list section {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
-	border: 1px solid white;
-	font-family: var(--heading-font);
-	
-	
-}
 
-.list section > * {
-	margin: 0 .3rem;
-}
-
-.list section img {
-	display: none; 
-}
-
-.list section h3 {
-	font-size: 1rem;
-	
-}
-
-.list section:nth-child(even) {
-	background-color: rgb(159, 200, 247);
-}
 
 
 section p {
@@ -274,39 +184,43 @@ img {
 /*----------------------------------------INDEX PAGE-----------------------------------*/
 
 
-    .container{
+.container{
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	/* border: 5px solid black; */
-	/* background-position: center ; */
-	background-color: white;
-    }
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+/* border: 5px solid black; */
+/* background-position: center ; */
+background-color: white;
+}
 
+.welcome p{
+
+	margin-bottom: 1rem;
+}
+	
 #img{
 	width: 100%;
 	height: 30%;
-	margin-top: 1rem;
+	margin-top: 2rem;
 	/* margin-bottom: 1rem; */
 	/* filter: brightness(0.5) */
 }
 
 .toaction{
-	background-color: rgb(7, 177, 44);
-	padding: .5rem;
+	background-color: rgba(83, 211, 111, 0.829);
+	padding: 1rem;
 	border-radius: 1.5rem;
-	margin-top: 1.2rem;
+	margin-top: 1.5rem;
 
-}
-.toaction a{
 	margin: 5px;
 	color:black;
-	font-weight: 600;
-	font-size: 1rem;
+	font-weight:bold;
+	font-size: 1.3rem;
 	text-decoration: none;
 }
+
 
 article{
 	margin-top: 1rem;
@@ -339,26 +253,59 @@ h3{
 	
 	text-align: center;
 	margin-bottom: 1rem;
-	border: 3px solid rgba(0, 0, 255, 0.548);
+	/* border: 3px solid rgba(0, 0, 255, 0.548); */
 	border-radius: 1.5rem;
 	
 }
 #weatherForecastContainer{
 	text-align: center;
-	background-color: rgb(164, 235, 235);
-	border: 3px solid rgba(0, 0, 255, 0.548);
+	/* background-color: rgb(22, 59, 102); */
+	
 	border-radius: 1.5rem;
 }
 #weatherForecastContainer div p{
 	font-size: 1rem;
+    /* padding-top: 1rem; */
 	margin-top: .5rem;
+    margin-bottom: 1rem;
 }
 	
 
 
 #weatherForecastContainer div{
 	/* border: 2px solid rgba(0, 0, 255, 0.589) ; */
-	margin-top: 1rem;
+    background-color: rgb(22, 59, 102);
+	border: 3px solid rgba(255, 255, 255, 0.548);
 	border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color:white;
 
+}
+.companies{
+    background-color: #ffffff;
+}
+.companies h2{
+    margin-bottom: 1rem;
+}
+.grid section{
+    background-color: #a5ccff73;
+    border: 3px solid rgba(0, 0, 0, 0.548);
+	border-radius: 1.5rem;
+}
+
+.event{
+	text-align: center;
+	background-color: #a5ccff73;
+	margin-top: 1rem;
+}
+.event img{
+	width: 100%;
+	height: 30%;
+}
+.event-t p{
+	font-size: 1rem;
+	margin-top: .8rem;
+}
+.event-t h2{
+	margin-top: .8rem;
 }
