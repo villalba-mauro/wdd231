@@ -146,8 +146,18 @@ section {
 	font-family:var(--heading-font);
 }
 
+#description{
+	font-size: 1.1rem;
+}
+#town{
+	font-size: 1.3rem;
+}
 
-
+figcaption{
+	font-family: var(--paragraph-font);
+	font-size: 1.2rem;
+	font-weight: 500;
+}
 
 
 section p {

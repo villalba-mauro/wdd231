@@ -42,7 +42,7 @@ async function apiFetch() {
     myTown.innerHTML = `${data.name} City`;
     // currentTemp.innerHTML = data.weather[0].description;
     myTemperature.innerHTML = `${data.main.temp}&deg;C`;
-    myDescription.innerHTML = `Current wheather: ${data.weather[0].description}`;
+    myDescription.innerHTML = `<strong>Current wheather:</strong> ${data.weather[0].description}`;
 
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     myGraphic.setAttribute('SRC',iconsrc)
@@ -105,7 +105,7 @@ const displayWeatherForecast = (weatherData) => {
       const diffDays = Math.floor((entryDate - today) / (1000 * 60 * 60 * 24));
 
       // Guardamos las temperaturas de hoy, mañana y pasado mañana
-      if (diffDays >= 0 && diffDays <= 5) {
+      if (diffDays >= 1 && diffDays <= 3) {
         temperatures.push({
           day: weekdays[entryDate.getDay()],
           temperature: entry.main.temp,
