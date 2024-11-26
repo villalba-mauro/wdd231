@@ -319,3 +319,196 @@ h3{
 .event-t h2{
 	margin-top: .8rem;
 }
+
+/*-----------------------------JOIN PAGE---------------------------------*/
+
+.grid-join {
+	
+	/* grid-template-columns: repeat(2, 1fr); */
+	column-gap: 10px;
+	padding-top: 7%;
+	padding-bottom: 7%;
+  }
+
+  .responsive-table {
+	font-family: var(--paragraph-font);
+	background-color: rgb(255, 255, 255);
+	margin: 50px auto;
+	width: 100%;
+	max-width: 600px;
+	border-collapse: collapse;
+	font-size: 16px;
+	color: var(--div-color);
+  }
+  .responsive-table th,
+  .responsive-table td {
+	text-align: left;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border: 1px solid #c0c0c0;
+  
+}
+
+.responsive-table thead tr {
+    display: none;
+	
+}
+
+.responsive-table thead tr {
+display: table-row;
+}
+
+.responsive-table tr {
+    display: table-row;
+    border: 0;
+	
+	
+  
+}
+
+.responsive-table th {
+  padding: 12px;
+  
+  
+}
+.responsive-table td {
+  border-top: 1px solid #c0c0c0;
+  padding: 12px 16px;
+  position: relative;
+}
+.responsive-table td {
+    padding: 12px;
+    border-top: 0;
+}
+
+.responsive-table td:first-child {
+  font-weight: 700;
+  border-top: 0;
+  padding: 16px 12px;
+}
+.responsive-table td:nth-child(n + 2):before {
+  color: #c0c0c0;
+  display: inline-block;
+  line-height: 24px;
+  margin: 0 0 8px;
+}
+.responsive-table ul {
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+.responsive-table li {
+  padding: 4px;
+}
+.container {
+  font-family: var(--paragraph-font);
+  color: var(--div-color);
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container h3 {
+  font-size: 1.5rem;
+  color: var(--div-color);
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color:black;
+  font-weight: 500;
+}
+.container input {
+  background-color: var(--background-color);
+  
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+ 
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+ 
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: var(--div-color);
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--div-color);
+  font-size: 1rem;
+}
+#submit-button {
+  height: 55px;
+  width: 100%;
+  color: #ffffff;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #333;
+  transition: transform 0.5s ease-in-out;
+}
+#submit-button:hover {
+  transform: translate(5px, -5px);
+  background-color: darkgreen;
+}
+.input-area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+ 
+}
+.input-area textarea {
+  margin-top: 20px;
+  /* height: 60px; */
+  width: 100%;
+  padding: 1rem;
+}
+select {
+  margin-left: 10px;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.hidden-label {
+  display: none;
+}
+
+
+

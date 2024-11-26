@@ -3,9 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Chamber of Commerce Home Page - Welcome to the official website of the Rosario Chamber of Commerce. Discover the top local businesses, upcoming events, and resources to support regional growth and entrepreneurship." >  
+    <meta name="author" content="Mauro Villalba | WDD 231">
+    <title>Join Us</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/indexLarge.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Join Us - Chambers of Commerce">
+    <meta property="og:type" content="website">
+	  <meta property="og:description" content="Discover the best local businesses in Rosario and connect with the services and products that drive our community. Rosario Chamber of Commerce: promoting business development and success." >
+    <meta property="og:image" content="https://villalba-mauro.github.io/wdd231/images/chamber_logo.png">
+    <meta property="og:url" content="https://villalba-mauro.github.io/wdd231/chamber/join.html">
+
+
 </head>
 <body>
-    
+    <header>
+        <button type="button" id="menu"></button>
+
+        <div class="logo">
+            <a href=""><img src="images/logo_sin_fondo.png" alt=""></a>
+            <h1>Chamber of Commerce Rosario</h1>
+        </div>
+      
+        <nav class="navigation">
+            <a href="/index.html" title="Home" >Home</a>
+            <a href="#" title="About Us">Discover</a>
+            <a href="directory.html" >Directory</a>
+            <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+    <section class="grid-join">
+        <div class="scale-up-top">
+          <table class="responsive-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Benefits (membership benefits are cumulative)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>NP Membership</td>
+                <td>
+                  <ul>
+                    <li>Free access to wine-related events and seminars.</li>
+                    <li>
+                      Opportunity for promotion on our platform as a nonprofit
+                      organization.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Bronze Membership</td>
+                <td>
+                  <ul>
+                    <li>$40</li>
+                    <li>
+                      Access to exclusive wine tastings with experts once every
+                      quarter.
+                    </li>
+                    <li>10% discount on wine purchases in our online store.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Silver Membership</td>
+                <td>
+                  <ul>
+                    <li>$80</li>
+                    <li>Exclusive access to VIP wine tasting events.</li>
+                    <li>
+                      Preferential reservations at our partner restaurants and
+                      wineries.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Gold Membership</td>
+                <td>
+                  <ul>
+                    <li>$110</li>
+                    <li>
+                      Exclusive access to training events and seminars with
+                      renowned winemakers.
+                    </li>
+                    <li>
+                      Featured advertising for your business on the homepage of
+                      our website.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        
+        <div class="container">
+          <h3>Be a member of the chamber</h3>
+          <form action="thankyou.html" class="form" method="get">
+            <div class="input-box">
+              <label for="applicant_first_name">Firs Name</label>
+              <input
+                type="text"
+                id="applicant_first_name"
+                name="applicant_first_name"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="applicant_last_name">Last Name</label>
+              <input
+                type="text"
+                id="applicant_last_name"
+                name="applicant_last_name"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+            <div class="input-box address">
+              <label for="applicant_title">Title or Position:</label>
+              <input
+                type="text"
+                id="applicant_title"
+                name="applicant_title"
+                pattern="[a-zA-Z -]{7,}"
+                title="Only alpha characters, hyphens, and spaces with a minimum of seven characters are allowed."
+                placeholder="Enter title or position"
+              />
+            </div>
+            <div class="input-box">
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@example.com"
+                required
+              />
+            </div>
+            <div class="column">
+              <div class="input-box">
+                <label for="mobile_phone">Mobile Phone Number:</label>
+                <input
+                  type="tel"
+                  id="mobile_phone"
+                  name="mobile_phone"
+                  placeholder="Enter a mobile number"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-box">
+              <label for="organization_name"
+                >Business/Organization's Name:</label
+              >
+              <input
+                type="text"
+                id="organization_name"
+                name="organization_name"
+                placeholder="your organization name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <select id="membership_type" name="membership_type" required>
+                <option value="" disabled selected>
+                  Select membership type
+                </option>
+                <option value="NP Membership">NP Membership</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Gold Membership">Gold Membership</option>
+              </select>
+            </div>
+            <div class="input-area">
+              <label for="organizationType">Organization Type:</label>
+              <textarea
+                id="organizationType"
+                name="organizationType"
+                placeholder="A business/organization's description"
+                required=""
+              ></textarea>
+            </div>
+            <label for="submit-button" class="hidden-label">Timestamp:</label>
+            <label for="submit-button" class="hidden-label">Timestamp:</label>
+            <input
+              class="button"
+              type="hidden"
+              id="timestamp"
+              name="timestamp"
+            />
+            <input
+              class="button"
+              type="submit"
+              id="submit-button"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </section>
+
+      <footer class="foo">
+        <p class="final">
+            <span id="currentyear"></span>
+            ©️ Mauro Villalba - Rosario Argentina<br>
+        </p>
+        <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
+    </footer>
+ <script src="scripts/script.js"></script>
 </body>
 </html>
