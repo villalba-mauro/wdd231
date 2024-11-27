@@ -17,6 +17,7 @@ header {
 	padding: 20px 0;
 	padding-bottom: 0;
 }
+
 /* header img{
     width: 10vh;
 	display: inline-flex;
@@ -84,7 +85,7 @@ h1{
 	transition: .3s;
 }
 .navigation a:hover {
-	background-color: rgb(179, 227, 255);;
+	background-color: rgb(179, 227, 255);
 	color: #000000;
 	font-weight: 700;
 } 
@@ -326,8 +327,9 @@ h3{
 	
 	/* grid-template-columns: repeat(2, 1fr); */
 	column-gap: 10px;
-	padding-top: 7%;
+	padding-top: 3.5%;
 	padding-bottom: 7%;
+	background-color: #a5ccff73;
   }
 
   .responsive-table {
@@ -363,9 +365,6 @@ display: table-row;
 .responsive-table tr {
     display: table-row;
     border: 0;
-	
-	
-  
 }
 
 .responsive-table th {
@@ -428,7 +427,8 @@ display: table-row;
 }
 .input-box label {
   color:black;
-  font-weight: 500;
+  font-weight: 600;
+
 }
 .container input {
   background-color: var(--background-color);
@@ -475,19 +475,21 @@ display: table-row;
   height: 55px;
   width: 100%;
   color: #ffffff;
-  border: 1px solid black;
+	border:none;
   font-size: 1rem;
   font-weight: 600;
   margin-top: 30px;
-  border: none;
+
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #333;
+  background: #5c5a5a;
   transition: transform 0.5s ease-in-out;
+  border-radius: 0;
 }
 #submit-button:hover {
   transform: translate(5px, -5px);
   background-color: darkgreen;
+  
 }
 .input-area {
   display: flex;
@@ -496,6 +498,7 @@ display: table-row;
  
 }
 .input-area textarea {
+	
   margin-top: 20px;
   /* height: 60px; */
   width: 100%;
@@ -510,5 +513,73 @@ select {
   display: none;
 }
 
+article{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/* background-color: wheat; */
+	
+	margin: 1rem;
+}
+article h4{
+	font-size: 1rem;
+	text-align: center;
+	font-family: var(--heading-font);
+}
+article div{
+	/* height: 80%; */
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+	font-family: var(--paragraph-font);
+	font-size: 1.2rem;
+	border: 1px solid black;
+	border-radius: 1.2rem;
+	background-color: rgb(255, 255, 255);
 
+}
+article div button{
+	margin-top: 1rem;
+}
+.button{
+	/* background-color: #a6b2f88c; */
+	color: #000000;
+	border-radius: 1.5rem;
+	padding: .5rem;
+	cursor: pointer;;
+	font-size: 1rem;
+}
+.modal {
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1em;
+	max-width: 50ch;
+	border: 0;
+	box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
 
+.modal li{
+	text-align: left;
+	margin-left: 1.3rem;
+	padding: .3rem;
+}
+.modal::backdrop {
+	background: rgb(0 0 0 / 0.5);
+
+}
+:modal {
+	background-color: beige;
+	border-radius: 10px;
+	border: 1px solid rgb(0 0 0 / 0.1);
+}
+.close-button,
+.close-button-bronze,
+.close-button-silver,
+.close-button-gold {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border: none;
+	background: none;
+}
