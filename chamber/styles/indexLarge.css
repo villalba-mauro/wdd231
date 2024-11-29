@@ -51,14 +51,14 @@
         /* filter:blur(5px) */
     }
 
-    .container{
+    .container-home{
         padding: 0;
         margin: 0;
     }
 
     .welcome{
      background-color: #fafafac5;
-    
+     text-align: center;
      justify-content: center;
      border-radius: 1.5rem;
      
@@ -67,6 +67,7 @@
     
     .welcome h1{
         font-family: var(--heading-font);
+        font-size: 2rem;
     }
 
     .welcome p{
@@ -86,6 +87,7 @@
 
     .chamber{
         display: flex;
+        flex-direction: row;
         align-items: center;
     }
     .chamber img{
@@ -153,44 +155,19 @@
 
 /*-----------------------------JOIN PAGE---------------------------------*/
 
-/* .responsive-table th,
-.responsive-table td {
-  border: 1px solid #c0c0c0;
-}
-
-.responsive-table thead tr {
-    display: none;
-}
-
-.responsive-table thead tr {
-display: table-row;
-}
-
-.responsive-table tr {
-    display: table-row;
-    border: 0;
-    margin: 0;
-}
-
-.responsive-table th {
-  padding: 12px;
-}
-.responsive-table td {
-  border-top: 1px solid #c0c0c0;
-  padding: 12px 16px;
-  position: relative;
-} */
-
-
 .grid-join {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1fr 1fr; */
 	column-gap: 10px;
+    
 	/* padding-top: 7%; */
 	/* padding-bottom: 7%; */
-  }
-  .form :where(.input-box input, .select-box) {
-width: 90%;  
+}
+
+.form :where(.input-box input, .select-box) {
+    width: 90%;  
+    
 }
 h3{
     margin-top: 1rem;
@@ -226,27 +203,68 @@ article button{
 	color: rgb(0, 0, 0);
 	transition: .3s;
 }
+
+
+.container-home{
+    width: 100%;
+    /* margin-left: 3rem; */
+    justify-self: center;
+    
+}
+
+.form label{
+    font-size: 1.5rem;
+}
+#membership_type{
+    font-size: 1.5rem;
+}
+
+/*----------ANIMATIONS-----------*/
+.blur-in-expand-np{animation:blur-in-expand-np 0.7s linear both} @keyframes blur-in-expand-np{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+.blur-in-expand-bronze{animation:blur-in-expand-bronze 0.8s linear both} @keyframes blur-in-expand-bronze{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+.blur-in-expand-silver{animation:blur-in-expand-silver 0.9s linear both} @keyframes blur-in-expand-silver{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+.blur-in-expand-gold{animation:blur-in-expand-gold 1s linear both} @keyframes blur-in-expand-gold{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+
+.modal{
+    max-width: 100%;
+}
+.modal li{
+    font-size: 1.6rem;
+}
+  
+  
 .bronze-mem:hover{
     background-color:rgb(205, 127, 50);
 	color: rgb(0, 0, 0);
-	transition: .3s;
-	transform: scale(1.1); 
+	transition: all .3s ease;
+	transform:translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 0px 10px 2px rgba(205, 127, 50);
 }
 .silver-mem:hover{
     background-color:rgb(192,192,192);
 	color: rgb(0, 0, 0);
 	transition: .3s;
-	transform: scale(1.1); 
+	transform: translateY(-5px)scale(1.1); 
+    box-shadow: 0px 0px 10px 2px rgb(192,192,192);
+    
 }
 
 .gold-mem:hover{
     background-color:rgb(255,215,0);
 	color: rgb(0, 0, 0);
 	transition: .3s;
-	transform: scale(1.1); 
+	transform:translateY(-5px) scale(1.1); 
+    box-shadow: 0px 0px 10px 2px rgb(255,215,0);
 }
-
-
+.submission-details p{
+	padding: .5rem;
+	font-size: 1.5rem;
+}
+#submit-button{
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+}
 
 
 

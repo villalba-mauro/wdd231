@@ -45,9 +45,9 @@
       
     <div class="container">
       <h3>Be a member of the chamber</h3>
-      <form action="thankyou.html" class="form" method="get">
+      <form action="thanks.html" class="form" method="get">
         <div class="input-box">
-          <label for="applicant_first_name">Firs Name</label>
+          <label for="applicant_first_name">First Name</label>
           <input
             type="text"
             id="applicant_first_name"
@@ -117,9 +117,9 @@
                 Select membership type
               </option>
               <option value="NP Membership">NP Membership</option>
-              <option value="Bronze Membership">Bronze Membership</option>
-              <option value="Silver Membership">Silver Membership</option>
-              <option value="Gold Membership">Gold Membership</option>
+              <option value="Bronze Membership">Bronze Membership 🥉</option>
+              <option value="Silver Membership">Silver Membership 🥈</option>
+              <option value="Gold Membership">Gold Membership 🥇</option>
             </select>
           </div>
           <div class="input-area">
@@ -145,13 +145,13 @@
             id="submit-button"
             value="Submit"
           />
-        </form>
+      </form>
     </div>
 
-    <article class="slide-bottom">
+    <article >
       <h4>Membership Levels</h4>
 
-      <div class="np"><h5>NP Membership</h5>
+      <div class="np  blur-in-expand-np"><h5>NP Membership</h5>
 
         <button class="button open-button">Learn More</button>
         <dialog class="modal" id="np">
@@ -166,7 +166,7 @@
         </dialog>
       </div>
 
-      <div class="bronze-mem"><h5>Bronze Membership</h5> 
+      <div class="bronze-mem blur-in-expand-bronze"><h5>Bronze Membership</h5> 
         <button class="button open-button-bronze">Learn More</button>
         <dialog class="modal" id="bronze">
         <h5>Benefits</h5>
@@ -186,7 +186,7 @@
       </div>
 
 
-      <div class="silver-mem"><h5>Silver Membership</h5> 
+      <div class="silver-mem  blur-in-expand-silver"><h5>Silver Membership</h5> 
         <button class="button open-button-silver">Learn More</button>
         <dialog class="modal" id="silver">
         <h5>Benefits</h5>
@@ -204,7 +204,7 @@
         </dialog>
       </div>
 
-      <div class="gold-mem"><h5>Gold Membership</h5> 
+      <div class="gold-mem  blur-in-expand-gold"><h5>Gold Membership</h5> 
         <button class="button open-button-gold">Learn More</button>
         <dialog class="modal" id="gold">
         <h5>Benefits</h5>
@@ -234,6 +234,9 @@
     </p>
     <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
   </footer>
- <script src="scripts/ham-menu.js"></script>
+ <script src="scripts/ham-menu.js" defer></script>
+
+ <script src="scripts/thanks.js"></script>
+ 
 </body>
 </html>

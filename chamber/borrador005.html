@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Discover the best local businesses in Rosario and connect with the services and products that drive our community. Rosario Chamber of Commerce: promoting business development and success." >  
+        <meta name="author" content="Mauro Villalba | WDD 231">
+        <title>Join Us - Chambers of Commerce</title>
+        <link rel="icon" href="favicon.ico">
+      
+      
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/indexLarge.css">
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+      
+        <meta property="og:title" content="Join Us - Chambers of Commerce">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Discover the best local businesses in Rosario and connect with the services and products that drive our community. Rosario Chamber of Commerce: promoting business development and success." >
+        <meta property="og:image" content="https://villalba-mauro.github.io/wdd231/images/chamber_logo.png">
+        <meta property="og:url" content="https://villalba-mauro.github.io/wdd231/chamber/join.html">
+      
+      </head>
+      
+<body>
+    <header>
+        <button type="button" id="menu"></button>
+        <div class="logo">
+          <a href=""><img src="images/logo_sin_fondo.png" alt=""></a>
+          <h1>Chamber of Commerce Rosario</h1>
+        </div>
+        
+        <nav class="navigation">
+          <a href="index.html" title="Home" >Home</a>
+          <a href="#" title="About Us">Discover</a>
+          <a href="directory.html" >Directory</a>
+          <a href="join.html" class="active">Join Us</a>
+        </nav>
+    </header>
+
+<main>
+     <section class="logo-reel"></section>
+    <section id="results" class="card"></section> 
+    <div class="form-container">
+        <h1>Contact Form</h1>
+
+        <form id="contactForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required><br><br>
+
+            <label for="business">Business Name:</label>
+            <input type="text" id="business" name="business" required><br><br>
+
+           
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+
+
+<footer class="foo">
+    <p class="final">
+        <span id="currentyear"></span>
+        ©️ Mauro Villalba - Rosario Argentina<br>
+    </p>
+    <p id="lastModified"></p> 
+</footer>
+<script src="scripts/thanks.js"></script>
+    <script>
+        // thankyou.js
+document.addEventListener('DOMContentLoaded', () => {
+    // Obtener parámetros de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Crear elementos para mostrar la información
+    const formDataContainer = document.getElementById('form-data');
+
+    // Lista de campos que se van a mostrar
+    const fields = [
+        { key: 'name', label: 'Nombre' },
+        { key: 'lastname', label: 'Apellido' },
+        { key: 'email', label: 'Correo electrónico' },
+        { key: 'phone', label: 'Número de teléfono' },
+        { key: 'company', label: 'Nombre de la empresa' },
+        { key: 'current-date', label: 'Fecha y hora actuales' },
+    ];
+
+    // Iterar y agregar cada campo al DOM
+    fields.forEach(({ key, label }) => {
+        const value = urlParams.get(key) || 'No especificado';
+        const fieldElement = document.createElement('p');
+        fieldElement.textContent = `${label}: ${value}`;
+        formDataContainer.appendChild(fieldElement);
+    });
+});
+
+    </script>
+</body>
+</html>
