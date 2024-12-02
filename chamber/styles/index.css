@@ -413,6 +413,7 @@ display: table-row;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  justify-self: center;
 }
 .container h3 {
   font-size: 1.5rem;
@@ -559,12 +560,17 @@ article div button{
 	max-width: 50ch;
 	border: 0;
 	box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+	width: 100%;
 }
-
+.modal h5{
+	font-size: 1.2rem;
+}
 .modal li{
 	text-align: left;
 	margin-left: 1.3rem;
 	padding: .3rem;
+	list-style-type: none;
+
 }
 .modal::backdrop {
 	background: rgb(0 0 0 / 0.5);

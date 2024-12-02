@@ -1,22 +1,32 @@
-// Obtener el formulario y el campo del timestamp
-const form = document.getElementById('contactForm');
-const timestampInput = document.getElementById('timestamp');
-document.getElementById("timestamp").value = new Date().toISOString();
-form.addEventListener('submit', (event) => {
-  // Evitar que el formulario se envíe automáticamente
-  event.preventDefault();
+// 
+const currentUrl = window.location.href;
+const everything = currentUrl.split('?');
+let formData = everything[1].split('&');
 
-  // Obtener la fecha y hora actuales
-  const now = new Date();
-  const formattedTimestamp = now.toISOString(); // Guardar en formato ISO
+function show(info) {
+  let result = '';
+  formData.forEach((element) => {
+    if (element.startsWith(info)) {
+      result = element.split('=')[1].replace('%40', '@').replace(/\+/g, ' ');
 
-  // Asignar el timestamp formateado al campo oculto
-  timestampInput.value = formattedTimestamp;
+      if (info === 'description') {
+        result = element.split('=')[1].split('+').join(' ');
+      }
+    }
+  });
+  return result;
+}
 
-  // Obtener todos los datos del formulario
-  const formData = new FormData(form);
-  const queryString = new URLSearchParams(formData).toString();
+const timestamp = new Date().toLocaleString();
+const email = show('email');
+const showInfo = document.querySelector('#results');
+showInfo.innerHTML = `<strong><p>First Name:</strong> ${show('applicant_first_name')} </p>
+<strong><p/> Last Name:</strong> ${show('applicant_last_name')}</p>
+<strong><p>Title or Position:</strong> ${show('applicant_title')}</p>
+<strong><p>Email Address: </strong><a href="${email}">${email}</a></p>
+<strong><p> Business/Organization's Name: </strong>${show('organization_name')}</p>
+<strong><p>Membership Level:</strong> ${show('membership_type')}</p>
+<strong><p>Business Description:</strong> </strong>${show('organizationType')}</p> 
 
-  // Redirigir a la página thankyou.html con los datos
-  window.location.href = `thanks.html?${queryString}`;
-});
+<strong><p> Date and time processed:</strong> ${timestamp}</p>
+`;

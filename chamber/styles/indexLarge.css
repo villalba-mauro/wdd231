@@ -226,7 +226,7 @@ article button{
 .blur-in-expand-gold{animation:blur-in-expand-gold 1s linear both} @keyframes blur-in-expand-gold{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
 
 .modal{
-    max-width: 100%;
+    max-width: 50%;
 }
 .modal li{
     font-size: 1.6rem;
