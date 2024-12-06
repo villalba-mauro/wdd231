@@ -270,14 +270,48 @@ article button{
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
+/*--------------DISCOVER PAGE-------------------*/
 
 
+.hero{
+    background-image: url(../images/torres.jpg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-attachment:scroll;
+    background-size: cover;
+    height: 100vh;
+}
+.hero-p{
+    max-width: 30%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(245, 245, 220, 0.63);
+    border-radius: 1rem;
+    position: absolute;
+    top:300px;
+    p{
+        padding: 1rem;
+    }
+    h2{
+        padding: 1rem;
+    }
+}
 
+/**---------DISCOVER PAGE---------------------------*/
 
+.container {  display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+"aside main main"
+"aside main main"
+"aside main main";
+}
 
+.aside { grid-area: aside; }
 
-
-
+.cards { grid-area: main; }
 
 
 
