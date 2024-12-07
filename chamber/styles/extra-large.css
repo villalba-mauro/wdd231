@@ -1,0 +1,26 @@
+@media (min-width: 1200px){
+    .layout{
+        display: flex;
+        max-width: 100%;
+        
+    }
+    /* .main-aside{
+        display: none;
+    } */
+    
+    .cards{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+    .cards img{
+        max-width:  30%;
+        /* height: auto; */
+        
+    }
+    .text{
+        max-height: 50%;
+    }
+    
+
+}

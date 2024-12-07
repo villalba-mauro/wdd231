@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce Directory Page</title>
-	<meta name="description" content="Chamber of Commerce Directory Page" >  
+    <title>Chamber of Commerce Discover Page</title>
+	<meta name="description" content="Discover the most important events, meet our work teams and explore the exclusive benefits offered by the Rosario Chamber of Commerce to boost your business and strengthen the business community." >  
     <meta name="author" content="Mauro Villalba | WDD 231">
 	<link rel="icon" href="favicon.ico">
 
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/indexLarge.css">
+    <link rel="stylesheet" href="styles/extra-large.css
+    ">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Discover - Chambers of Commerce">
+    <meta property="og:type" content="website">
+	<meta property="og:description" content="Explore featured events, meet our teams and discover the exclusive benefits of being part of the Rosario Chamber of Commerce. Let's drive business success together!" >
+    <meta property="og:image" content="https://villalba-mauro.github.io/wdd231/images/chamber_logo.png">
+    <meta property="og:url" content="https://villalba-mauro.github.io/wdd231/chamber/discover.html">
 
 </head>
 
@@ -36,28 +44,84 @@
             <a href="join.html">Join</a>
         </nav>
     </header>
-    <main>
+    <main class="layout">
     
-        <section class="hero">
-            <div class="hero-p">
-                <h2> hola</h2>
+        <!-- <section class="hero-image">
+            <div class="hero-text">
+                <h2 style="font-size:50px"> hola</h2>
                 <p>Get to know our community and innovative spirit</p>
-    
+                <button>Discover more oportunities</button>
             </div>
-        </section>
-        <section class="container">
-            <aside class="aside"></aside>
+        </section> -->
+        <aside class="main-aside">
+            <div id="asid-1">
+                <h3>Welcome</h3>
+                <p>Discover the opportunities within our chamber of commerce</p>
+            </div>
 
-            <article class="cards"> 
-                <img src="images/card-imgg-1.webp" alt="Group of people talking " style="width:100%" loading="lazy">
+            <div class="calender-container">
+                <h3 id="current-month"></h3>
+                <ol>
+                    <li class="day-name">Mon</li>
+                    <li class="day-name">Tue</li>
+                    <li class="day-name">Wed</li>
+                    <li class="day-name">Thu</li>
+                    <li class="day-name">Fri</li>
+                    <li class="day-name">Sat</li>
+                    <li class="day-name">Sun</li>
+
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ol>
+            </div>
+
+            <div id="map">
+                <p>Visit the city of Rosario and meet with us, you will also enjoy a tour of the city</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.75304350565!2d-60.77904145103877!3d-32.952038200832845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1733579653065!5m2!1ses-419!2sar" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </aside>
+        <section class="main-section" id="grid">
+
+
+            <article class="cards" id="art1"> 
+                <img src="images/1-team.webp" alt="Group of people talking " width="600" height="400" loading="lazy">
                 <div class="text">
                   <h4><b>We have the best advisors</b></h4> 
                   <p>"Discover our wide range of tools designed to provide you with 24-hour support and advice. Whether you need professional guidance or quick solutions, our teams are ready to accompany you every step of the way."</p> 
                 </div>
             </article>
 
-            <article class="cards"> 
-                <img src="images/card-img-2-.webp" alt="image networking" style="width:100%" loading="lazy">
+            <article class="cards" id="art2"> 
+                <img src="images/2.webp" alt="image networking" width="600" height="400" loading="lazy">
                 <div class="text">
                   <h4><b>Connections that Drive Business</b></h4> 
                   <p>At the Rosario Chamber of Commerce, we foster the growth of our business community through strategic meetings and networking. Join a space where entrepreneurs, professionals and companies collaborate, share ideas and generate opportunities. Together, we build alliances that strengthen local development and boost the success of each business.</p>
@@ -65,29 +129,42 @@
             </article>
 
             
-            <article class="cards"> 
-                <img src="images/card-img-3.webp" alt="image networking" style="width:100%" loading="lazy">
+            <article class="cards" id="art3"> 
+                <img src="images/1.webp" alt="image networking" width="600" height="400"loading="lazy">
                 <div class="text">
                   <h4><b>A Year of Achievements and Business Growth</b></h4> 
                     <p>Last year marked a milestone in the economic growth of the companies that are part of the Rosario Chamber of Commerce. Thanks to strategic initiatives, key alliances and the commitment of our business network, we have promoted projects that generated employment, innovations and expansion in various sectors. This success would not be possible without the collective effort of our members. Join us and be part of this movement that transforms businesses and strengthens our local economy.</p>
                 </div>
             </article>
 
-            <article class="cards"> 
-                <img src="images/card-img-4.webp" alt="image networking" style="width:100%" loading="lazy">
+            <article class="cards" id="art4"> 
+                <img src="images/5.webp" alt="image networking" width="600" height="400" loading="lazy">
                 <div class="text">
                   <h4><b>Exclusive Benefits to Boost Your Business</b></h4> 
                     <p>At the Rosario Chamber of Commerce, we offer you more than just a membership: we offer you tools to transform your business. Access personalized advice, exclusive networking spaces, and visibility opportunities that will position you as a leader in your sector. In addition, enjoy unique benefits such as discounts on services, training for you and your team, and access to strategic information. Join our community and start taking advantage of everything you need to take your company to the next level.</p>
                 </div>
             </article>
 
-            <article class="cards"> 
-                <img src="images/card-img-5.webp" alt="image networking" style="width:100%" loading="lazy">
+            <article class="cards" id="art5"> 
+                <img src="images/4.webp" alt="image networking" width="600" height="400" loading="lazy">
                 <div class="text">
                   <h4><b>Committed to a Sustainable Future</b></h4> 
                     <p>At the Rosario Chamber of Commerce, we believe that business success must go hand in hand with caring for the environment. That is why we launched the community project 'Rosario Verde', an initiative that brings together companies, entrepreneurs and citizens in concrete actions to reduce our environmental footprint. From recycling campaigns to reforestation of public spaces, our goal is to build a more sustainable city for future generations.</p>
                 </div>
             </article>
+
+            <article class="cards" id="art6"> 
+                <img src="images/3.webp" alt="image networking" width="600" height="400"  loading="lazy">
+                <div class="text">
+                  <h4><b>Gateway to International Trade</b></h4> 
+                    <p>The port of Rosario is a key pillar for international trade, connecting our city with global markets. Thanks to its strategic location and modern infrastructure, it allows for the efficient export and import of goods, strengthening the local economy and boosting business opportunities for Rosario companies. Join the Chamber and access resources and contacts that will help you take full advantage of the potential of this logistics hub</p>
+                </div>
+            </article>
+
+            
+
+
+                  
         </section>
     
     </main>
@@ -100,5 +177,6 @@
         <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
     </footer>
     <script src="scripts/ham-menu.js"></script>
+    <script src="scripts/calender.js"></script>
 </body>
 </html>
