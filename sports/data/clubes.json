@@ -1,0 +1,289 @@
+{
+    "clubs": {
+      "England": [
+        {
+          "name": "Manchester United",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["red", "black"],
+            "sizes": {
+              "S": 10,
+              "M": 20,
+              "L": 15,
+              "XL": 5
+            },
+            "discount": {
+              "hasDiscount": true,
+              "percentage": 20
+            }
+          }
+        },
+                
+        {
+          "name": "Chelsea",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["red", "white"],
+            "sizes": {
+              "S": 2,
+              "M": 0,
+              "L": 3,
+              "XL": 7
+            },
+            "discount": {
+              "hasDiscount": false,
+              "percentage": null
+            }
+          }
+        },
+        {
+          "name": "Liverpool",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["red", "white"],
+            "sizes": {
+              "S": 8,
+              "M": 12,
+              "L": 18,
+              "XL": 7
+            },
+            "discount": {
+              "hasDiscount": false,
+              "percentage": null
+            }
+          }
+        },
+        {
+          "name": "Tottenham",
+          "image":"images/arg.webp",
+
+          "jersey": {
+            "colors": ["black", "red"],
+            "sizes": {
+              "S": 30,
+              "M": 25,
+              "L": 20,
+              "XL": 10
+            },
+            "discount": {
+              "hasDiscount": true,
+              "percentage": 30
+            }
+          }
+        }
+      ],
+      "Argentina": [
+        {
+          "name": "Boca Juniors",
+          "image":"images/arg.webp",
+
+          "jersey": {
+            "colors": ["blue", "yellow"],
+            "sizes": {
+              "S": 30,
+              "M": 25,
+              "L": 20,
+              "XL": 10
+            },
+            "discount": {
+              "hasDiscount": true,
+              "percentage": 10
+            }
+          }
+        },
+        {
+          "name": "River Plate",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["white", "red"],
+            "sizes": {
+              "S": 15,
+              "M": 10,
+              "L": 5,
+              "XL": 2
+            },
+            "discount": {
+              "hasDiscount": false,
+              "percentage": null
+            }
+          }
+        },
+        {
+          "name": "Tigre",
+          "image": "images/arg.webp",
+          "jersey": {
+            "colors": ["red", "white"],
+            "sizes": {
+              "S": 20,
+              "M": 30,
+              "L": 25,
+              "XL": 15
+            },
+            "discount": {
+              "hasDiscount": true,
+              "percentage": 15
+            }
+          }
+        },
+
+        {
+          "name": "Racing Club",
+          "image": "images/arg.webp",
+          "jersey": {
+            "colors": ["blue", "white"],
+            "sizes": {
+              "S": 35,
+              "M": 40,
+              "L": 30,
+              "XL": 20
+            },
+            "discount": {
+              "hasDiscount": false,
+              "percentage": 0
+            }
+          }
+        }
+      ],
+      "Spain": [
+        {
+          "name": "Real Madrid",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["white", "gold"],
+            "sizes": {
+              "S": 20,
+              "M": 25,
+              "L": 30,
+              "XL": 10
+            },
+            "discount": {
+              "hasDiscount": true,
+              "percentage": 20
+            }
+          }
+        },
+        {
+          "name": "Atletico Madrid",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["blue", "garnet"],
+            "sizes": {
+              "S": 20,
+              "M": 41,
+              "L": 5,
+              "XL":0
+            },
+            "discount": {
+              "hasDiscount": true,
+              "percentage": 12
+            }
+          }
+        },
+        {
+          "name": "Sevilla",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["blue", "garnet"],
+            "sizes": {
+              "S": 0,
+              "M": 2,
+              "L": 5,
+              "XL": 7
+            },
+            "discount": {
+              "hasDiscount": false,
+              "percentage": null
+            }
+          }
+        },
+        {
+          "name": "Barcelona",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["blue", "garnet"],
+            "sizes": {
+              "S": 18,
+              "M": 22,
+              "L": 25,
+              "XL": 5
+            },
+            "discount": {
+              "hasDiscount": false,
+              "percentage": null
+            }
+          }
+        }
+      ],
+      "Germany": [
+        {
+          "name": "Bayern Munich",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["red", "white"],
+            "sizes": {
+              "S": 12,
+              "M": 18,
+              "L": 20,
+              "XL": 8
+            },
+            "discount": {
+              "hasDiscount": true,
+              "percentage": 10
+            }
+          }
+        },
+        {
+          "name": "Bayern Leverkusen",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["red", "white"],
+            "sizes": {
+              "S": 3,
+              "M": 1,
+              "L": 0,
+              "XL": 36
+            },
+            "discount": {
+              "hasDiscount": true,
+              "percentage": 50
+            }
+          }
+        },
+        {
+          "name": "Wolfsburg",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["red", "white"],
+            "sizes": {
+              "S": 4,
+              "M": 0,
+              "L": 25,
+              "XL": 16
+            },
+            "discount": {
+              "hasDiscount": false,
+              "percentage": null
+            }
+          }
+        },
+        {
+          "name": "Borussia Dortmund",
+          "image":"images/arg.webp",
+          "jersey": {
+            "colors": ["yellow", "black"],
+            "sizes": {
+              "S": 25,
+              "M": 30,
+              "L": 15,
+              "XL": 5
+            },
+            "discount": {
+              "hasDiscount": false,
+              "percentage": null
+            }
+          }
+        }
+      ]
+    }
+  }
+  

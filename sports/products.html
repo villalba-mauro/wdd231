@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+	<meta name="description" content="Striker Style Home Page - Welcome to the official website of the Rosario Chamber of Commerce. Discover the top local businesses, upcoming events, and resources to support regional growth and entrepreneurship." >  
+    <meta name="author" content="Mauro Villalba | WDD 231">
+	<link rel="icon" href="../images/menu_icon.ico">
+
+
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Home Page - Chambers of Commerce">
+    <meta property="og:type" content="website">
+	<meta property="og:description" content="Explore the Chamber of Commerce of Rosario, where the most prestigious companies come together to promote growth, innovation, and excellence in the local business community." >
+    <meta property="og:image" content="https://villalba-mauro.github.io/wdd231/images/chamber_logo.png">
+    <meta property="og:url" content="https://villalba-mauro.github.io/wdd231/chamber/directory.html">
+
+
+
+</head>
+<body>
+    <header>
+        <button type="button" id="menu"></button>
+
+        <!-- <button class="openbtn" onclick="openNav()">&#9776; Open Menu</button> -->
+
+        <div class="logo">
+            <a><img class="main-logo" src="images/logo-web.webp" alt=""></a>
+            <!-- <h1>Striker Style</h1> -->
+        </div>
+
+        <nav class="navigation">
+            <a href="index.html" title="Home">Home</a>
+            <a href="./discover.html" class="active">Clubs</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="buttons">
+            <h3 class="view">Select the view</h3>
+            <button id="grid">⏹️Grid</button>
+            <button id="list">🟰List</button>
+        </section>
+
+        <div id="jerseys-container" class="grid"></div>
+     
+    </main>
+    <footer class="foo">
+        <p class="final">
+            <span id="currentyear"></span>
+            
+        Copyright © Mauro Villalba - Rosario Argentina<br>
+        </p>
+        <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
+
+        <div class="social-icons">
+
+            <!-- <a href="facebook.com">
+                <img src="images/facebook.svg" alt="">
+            </a> -->
+            <a
+            href="https://www.instagram.com/mauro_mnv/"
+            class="icon-link"
+            target="_blank"
+            >
+            <i class="bi bi-instagram"></i><span hidden>Instagram</span>
+          </a>
+            <a
+              href="https://www.facebook.com/mauroriver99/"
+              class="icon-link"
+              target="_blank"
+            >
+              <i class="bi bi-facebook"></i><span hidden>Facebook</span>
+            </a>
+            <a
+              href="https://x.com/?lang=es"
+              class="icon-link"
+              target="_blank"
+            >
+              <i class="bi bi-twitter-x"></i><span hidden>X</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mauro-villalba24/"
+              class="icon-link"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin"></i><span hidden>LinkedIn</span>
+            </a>
+          </div>
+    </footer>
+
+<script defer src="scripts/b3.js"></script>  
+<script src="scripts/ham-menu.js"></script>
+</body>
+</html>
