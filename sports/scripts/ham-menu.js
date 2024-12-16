@@ -1,3 +1,5 @@
+
+
 //MENU RESPONSIVE
 const hamButton = document.getElementById('menu');
 const navigation = document.querySelector('.navigation');

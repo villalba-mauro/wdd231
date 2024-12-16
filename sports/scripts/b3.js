@@ -31,7 +31,7 @@ fetch("data/clubes.json")
         const clubDiv = document.createElement("div");
         clubDiv.classList.add("club");
         clubDiv.innerHTML = `
-          <img src="${club.image}" alt="${club.name}" />
+          <img src="${club.image}" alt="${club.name}" loading="lazy" />
           <h3>${club.name}</h3>
           
           

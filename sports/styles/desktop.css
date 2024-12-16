@@ -93,7 +93,7 @@ align-self: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-left: 0.5rem;
-    background-color: var(--accent-color3);
+    background-color: var(--secondary-color);
   
     
 
@@ -107,16 +107,20 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: var(--accent-color3);
+
     
 }
 .card{
-    background-color: var(--accent-color3);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* background-color: var(--accent-color3); */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 0px 9px 4px rgba(68, 0, 0, 0.61);
     padding: 1rem;
      max-width: 300px;
      /* margin: auto; */
     text-align: center;
     line-height: 1.5em;
+    margin: 10px;
 }
 .card img{
 
@@ -147,6 +151,39 @@ h1{
     color: var(--accent-color2);
     font-size:1.3rem;
     margin:5px;
+}
+.card .open-button, .card .open-button-modal2{
+    color:var(--accent-color);
+    background-color: var(--primary-color);
+    padding: .6rem;
+}
+.modal {
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1em;
+	max-width: 50ch;
+	border: 0;
+	box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+	width: 100%;
+   
+}
+.modal h5{
+	font-size: 1.2rem;
+}
+.modal p{
+ padding: .5rem;
+ line-height: 1.3em;
+
+}
+.modal::backdrop {
+	background: rgb(0 0 0 / 0.5);
+
+}
+.modal {
+	background-color: beige;
+	border-radius: 10px;
+	border: 1px solid rgb(0 0 0 / 0.1);
 }
 /*---------------article-------------------------------*/
 .art{
@@ -264,7 +301,7 @@ h1{
     /* grid-row: 2 ; */
     margin: 10px;
     padding: 1rem;
-    border: 2px solid;
+   
     place-items: center;
 
 }
@@ -301,8 +338,6 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-
-
 }
 .ofertas h2{
     margin: 1rem;

@@ -3,7 +3,7 @@
       "England": [
         {
           "name": "Manchester United",
-          "image":"images/arg.webp",
+          "image":"images/team2.webp",
           "jersey": {
             "colors": ["red", "black"],
             "sizes": {
@@ -21,7 +21,7 @@
                 
         {
           "name": "Chelsea",
-          "image":"images/arg.webp",
+          "image":"images/team3.webp",
           "jersey": {
             "colors": ["red", "white"],
             "sizes": {
@@ -38,7 +38,7 @@
         },
         {
           "name": "Liverpool",
-          "image":"images/arg.webp",
+          "image":"images/team4.webp",
           "jersey": {
             "colors": ["red", "white"],
             "sizes": {
@@ -55,7 +55,7 @@
         },
         {
           "name": "Tottenham",
-          "image":"images/arg.webp",
+          "image":"images/team5.webp",
 
           "jersey": {
             "colors": ["black", "red"],
@@ -75,7 +75,7 @@
       "Argentina": [
         {
           "name": "Boca Juniors",
-          "image":"images/arg.webp",
+          "image":"images/team6.webp",
 
           "jersey": {
             "colors": ["blue", "yellow"],
@@ -93,7 +93,7 @@
         },
         {
           "name": "River Plate",
-          "image":"images/arg.webp",
+          "image":"images/river.webp",
           "jersey": {
             "colors": ["white", "red"],
             "sizes": {
@@ -110,7 +110,7 @@
         },
         {
           "name": "Tigre",
-          "image": "images/arg.webp",
+          "image": "images/team7.webp",
           "jersey": {
             "colors": ["red", "white"],
             "sizes": {
@@ -128,7 +128,7 @@
 
         {
           "name": "Racing Club",
-          "image": "images/arg.webp",
+          "image": "images/team8.webp",
           "jersey": {
             "colors": ["blue", "white"],
             "sizes": {
@@ -147,7 +147,7 @@
       "Spain": [
         {
           "name": "Real Madrid",
-          "image":"images/arg.webp",
+          "image":"images/team9.webp",
           "jersey": {
             "colors": ["white", "gold"],
             "sizes": {
@@ -164,7 +164,7 @@
         },
         {
           "name": "Atletico Madrid",
-          "image":"images/arg.webp",
+          "image":"images/team10.webp",
           "jersey": {
             "colors": ["blue", "garnet"],
             "sizes": {
@@ -181,7 +181,7 @@
         },
         {
           "name": "Sevilla",
-          "image":"images/arg.webp",
+          "image":"images/team11.webp",
           "jersey": {
             "colors": ["blue", "garnet"],
             "sizes": {
@@ -198,7 +198,7 @@
         },
         {
           "name": "Barcelona",
-          "image":"images/arg.webp",
+          "image":"images/team12.webp",
           "jersey": {
             "colors": ["blue", "garnet"],
             "sizes": {
@@ -217,7 +217,7 @@
       "Germany": [
         {
           "name": "Bayern Munich",
-          "image":"images/arg.webp",
+          "image":"images/team13.webp",
           "jersey": {
             "colors": ["red", "white"],
             "sizes": {
@@ -234,7 +234,7 @@
         },
         {
           "name": "Bayern Leverkusen",
-          "image":"images/arg.webp",
+          "image":"images/team14.webp",
           "jersey": {
             "colors": ["red", "white"],
             "sizes": {
@@ -251,7 +251,7 @@
         },
         {
           "name": "Wolfsburg",
-          "image":"images/arg.webp",
+          "image":"images/team15.webp",
           "jersey": {
             "colors": ["red", "white"],
             "sizes": {
@@ -268,7 +268,7 @@
         },
         {
           "name": "Borussia Dortmund",
-          "image":"images/arg.webp",
+          "image":"images/team16.webp",
           "jersey": {
             "colors": ["yellow", "black"],
             "sizes": {
