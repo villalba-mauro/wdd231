@@ -149,6 +149,7 @@ h1{
 }
 .main-aside h2{
     margin: 10px;
+    font-family: var(--heading-font);
 
 
 }
