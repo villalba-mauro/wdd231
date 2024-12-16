@@ -235,6 +235,8 @@ h1{
     height: auto;
     margin: 0 3rem;
     display: inline-block;
+    margin-top: 10px;
+    
 }
 @keyframes scroll-back-and-forth {
     0% {
