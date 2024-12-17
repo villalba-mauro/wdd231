@@ -143,6 +143,16 @@ h1{
     padding: 1rem;
    
 }
+.local-storage{
+    display: flex;
+    
+    font-family: var(--paragraph-font);
+    text-align: center;
+    
+   margin: 10px;
+    font-size: medium;
+    
+}
 /*----------------------main-aside-------------------------------------*/
 .main-aside{
     display: none;
@@ -224,7 +234,6 @@ h1{
     white-space: nowrap;
     position: relative;
     width: 100%;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
 }
 .slide{
@@ -237,6 +246,7 @@ h1{
     margin: 0 3rem;
     display: inline-block;
     margin-top: 10px;
+    
     
 }
 @keyframes scroll-back-and-forth {
@@ -501,20 +511,19 @@ font-size: larger;
 .foo{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     /* width: 100%; */
     justify-content: space-between;
     align-items: center;
-    padding: 3%;
+    padding-top: 3%;
     transition: 0.2s ease-in-out;
     background-color: var(--accent-color);
-}
-.foo{
-	background-color:var(--accent-color);
 	color:black;
 	font-size: 1rem;
 }
+
 .foo p{
-	
+	font-size: medium;
 	color: var(--primary-color);
 	text-align: center;
 	font-family: var(--paragraph-font);
