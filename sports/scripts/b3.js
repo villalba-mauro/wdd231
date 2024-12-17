@@ -51,6 +51,7 @@ fetch("data/clubes.json")
             </select>
           </div>
           <p id="size-info-${team}-${index}"></p> <!-- Parrafo para mostrar disponibilidad -->
+          <button class="carrito">Add to cart</button>
         `;
 
         // Agregar el div del club a la sección del equipo

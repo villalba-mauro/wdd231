@@ -45,6 +45,12 @@ h1{
     font-family: var(--heading-font);
     font-size: 1.5rem;
 }
+hr{
+    border: 1px solid rgb(100, 97, 97);
+    margin-bottom: 10px;
+    margin: 20px auto 1rem;
+	width: 50%;
+}
 .logo{
   display: block;
 }
@@ -153,6 +159,11 @@ h1{
     font-size: medium;
     
 }
+.main-grid h2,
+.main-grid h3,
+.main-grid h4{
+    font-family: var(--heading-font);
+}
 /*----------------------main-aside-------------------------------------*/
 .main-aside{
     display: none;
@@ -167,6 +178,10 @@ h1{
 /*-------------main-section---------------------------------*/
 .main-section{
     text-align: center;
+}
+.main-section h2{
+    padding: 1.5rem;
+    font-size:large;
 }
 .container-img{
     width: 100%;
@@ -190,9 +205,10 @@ h1{
     /* margin: 10px; */
     /* padding-bottom: 1rem; */
 }
-.art-text h2{
+.art-text h3{
     line-height: 1.4em;
     /* font-size: 1.5rem; */
+    padding: 1rem;
 }
 .art-img{
     max-width: 100%;
@@ -235,6 +251,11 @@ h1{
     position: relative;
     width: 100%;
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+}
+.slide-container h4{
+    margin: 10px;
+    padding: 1rem;
+    font-size: medium;
 }
 .slide{
     display: inline-block;
@@ -371,9 +392,17 @@ h1{
     padding: 1rem;
     text-align: center;
     background-color: var(--secondary-color);
-    box-shadow: 1px 1px 6px 1px rgba(68, 0, 0, 1);
-
-    
+    box-shadow: 1px 1px 6px 1px rgba(68, 0, 0, 1);   
+}
+.carrito{
+    font-family: var(--paragraph-font);
+    font-size: 1rem;;
+    font-weight: 500;
+    padding: .3rem;
+    margin: 10px;
+    border-radius: 2rem;
+    background-color: var(--accent-color);
+    cursor: pointer;
 }
 /*----------------------CONTACT PAGE-------------------------*/
 .container-form{
@@ -396,15 +425,17 @@ padding: 16px;
 
 }
 
-.input-box{
+/* .input-box{
     width: 100%;
-}
+} */
 .input-box select{
-    padding: .5rem;
+    padding: .6rem;
     background-color: var(--primary-color);
     color: var(--accent-color);
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: .8rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+
 }
 .form :where(.input-box input, .select-box) {
     position: relative;
