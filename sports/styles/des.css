@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #181818;
+    --secondary-color: #FFFFFF;
+    --accent-color: #FFD200;
+    --accent-color2: #440000;
+    --accent-color3: #FFF7D4;
+
+    --heading-font: 'Nunito';
+    --paragraph-font: 'Glory';
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.main-logo {
+    width: 20%;
+    margin-left: 1rem;
+}
+.navigation {
+    position: relative; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 1rem;
+}
+.navigation a {
+    display: block;
+    align-self: center;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.main-aside {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+}
+.card {
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    background-color: var(--accent-color3);
+    border-radius: 2rem;
+    box-shadow: 0 0 10px #333;
+}
+.card img {
+    max-width: 100%;
+}
+.card h2 {
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+}
+.card p {
+    font-family: var(--paragraph-font);
+    font-size: 1.3rem;
+}
+.card button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 2rem;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+.modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    max-width: 50ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    width: 100%;
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.5);
+}
+/*----------PRODUCT PAGE------------*/
+#grid, #list {
+    font-family: var(--heading-font);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10em;
+    margin: 1rem;
+    font-size: 1.1rem;
+    padding: 15px;
+    cursor: pointer;
+}
+#grid:hover, #list:hover {
+    background-color: white;
+    color: black;
+    transition: .3s;
+    transform: scale(1.2);
+}
+.foo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 2%;
+    background-color: var(--accent-color);
+}
+.foo p {
+    font-size: large;
+}
+.team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.2rem;
+}
